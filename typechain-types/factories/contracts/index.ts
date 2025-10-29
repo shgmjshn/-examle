@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export { KomlockMerkleNFT__factory } from "./KomlockMerkleNFT__factory";
+export { MerkleNFT__factory } from "./MerkleNFT__factory";

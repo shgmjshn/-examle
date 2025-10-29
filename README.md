@@ -1,4 +1,4 @@
-## Komlock Lab: Merkle Tree を利用したNFTクレームシステム
+## Merkle Tree を利用したNFTクレームシステム
 
 Base Sepolia で動作する Merkle Airdrop 対応 ERC721。`merkleRoot` を保存し、`claim(uint256 amount, bytes32[] proof)` で検証・ミントします。`tokenURI` は全トークン同一の `NFT_METADATA_URL` を返します。
 
@@ -34,7 +34,7 @@ npm run deploy:base-sepolia
 ```
 
 ### コントラクト
-- `contracts/KomlockMerkleNFT.sol`
+- `contracts/MerkleNFT.sol`
   - `merkleRoot` 保存/更新 (`setMerkleRoot`)
   - `claim(amount, proof)`：検証→一括ミント（1アドレス1回のみ）
   - `tokenURI(tokenId)`：常に `NFT_METADATA_URL` を返す

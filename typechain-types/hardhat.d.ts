@@ -69,6 +69,10 @@ declare module "hardhat/types/runtime" {
       name: "KomlockMerkleNFT",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.KomlockMerkleNFT__factory>;
+    getContractFactory(
+      name: "MerkleNFT",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.MerkleNFT__factory>;
 
     getContractAt(
       name: "Ownable",
@@ -140,6 +144,11 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.KomlockMerkleNFT>;
+    getContractAt(
+      name: "MerkleNFT",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.MerkleNFT>;
 
     deployContract(
       name: "Ownable",
@@ -197,6 +206,10 @@ declare module "hardhat/types/runtime" {
       name: "KomlockMerkleNFT",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.KomlockMerkleNFT>;
+    deployContract(
+      name: "MerkleNFT",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.MerkleNFT>;
 
     deployContract(
       name: "Ownable",
@@ -268,6 +281,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.KomlockMerkleNFT>;
+    deployContract(
+      name: "MerkleNFT",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.MerkleNFT>;
 
     // default types
     getContractFactory(

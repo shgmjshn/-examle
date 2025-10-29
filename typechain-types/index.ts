@@ -34,3 +34,5 @@ export type { Strings } from "./@openzeppelin/contracts/utils/Strings";
 export { Strings__factory } from "./factories/@openzeppelin/contracts/utils/Strings__factory";
 export type { KomlockMerkleNFT } from "./contracts/KomlockMerkleNFT";
 export { KomlockMerkleNFT__factory } from "./factories/contracts/KomlockMerkleNFT__factory";
+export type { MerkleNFT } from "./contracts/MerkleNFT";
+export { MerkleNFT__factory } from "./factories/contracts/MerkleNFT__factory";

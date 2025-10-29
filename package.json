@@ -1,12 +1,14 @@
 {
-  "name": "komlock-merkle-nft",
+  "name": "merkle-nft",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "hardhat compile",
     "test": "hardhat test",
     "deploy:base-sepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
-    "gen:merkle": "ts-node scripts/generate-merkle.ts"
+    "gen:merkle": "ts-node scripts/generate-merkle.ts",
+    "dev": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",

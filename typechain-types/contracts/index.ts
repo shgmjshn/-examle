@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { KomlockMerkleNFT } from "./KomlockMerkleNFT";
+export type { MerkleNFT } from "./MerkleNFT";
